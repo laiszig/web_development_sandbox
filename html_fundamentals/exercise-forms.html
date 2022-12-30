@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style.css">
+    <title>HTML Lessons</title>
+
+
+    <form action="">
+        <label for="uname">Your Name</label>
+        <input type="text" name="uname" id="uname" placeholder="Your name" required> <br>
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="Your email"> <br>
+        <label for="department">Subject</label>
+        <select name="department">
+            <option value="Sales">Purchase or Return</option>
+            <option value="Marketing">Marketing</option>
+            <option value="General">Others</option>
+        </select> <br>
+        <label for="message">Details</label> <br>
+        <textarea name="message" id="message" style="width: 400px;height: 200px;"></textarea> <br>
+        <input type="submit" value="Submit request">
+    </form>
+
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <form action="login.php" method="post">
+            <label for="username">Username:</label><input id="username" type="text"> <br>
+            <label for="pw">Password :</label><input id="pw" type="password"> <br>
+            Gender: <br>
+            Male <input type="radio" name="gender" value="male">
+            Female <input type="radio" name="gender" value="female">
+            Other <input type="radio" name="gender" value="other"> <br>
+            Do you agree to T&C <br>
+            <input type="checkbox" name="TC" value="yes" checked> <br>
+            <input type="submit" value="Login">
+        </form>
+
+        <form method="post">
+            Subject:
+            <select name="subject"> 
+                <option value="Support">Support</option>
+                <option value="Info">Say hello</option>
+                <option value="Billing">Support</option>
+                <option value="Sales">Buy Something</option>
+            </select> <br>
+            <textarea name="message" rows="5" cols="50">Text that the user adds</textarea> <br>
+                <input type="submit" value="Submit">
+                <button type="button">click me</button>
+        </form>
+
+    </body>
+</html>
