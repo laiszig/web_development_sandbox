@@ -62,3 +62,39 @@ document.writeln("something"/variable);
 
 5. While using Control statements, all sytaxes are the same as in Java/'C' languages.
 
+6. Any script language is a function based script lang, so that for every task, we have create a user defined function, then that has to be called to get output.
+
+function <function_name> ([arg])
+{
+    body of the function
+    [return <expression>];
+}
+calling of function
+        <function_name>([arg values]);
+
+7. Event Handling: An event is a method which executes based on certain action done.
+What are the actions:
+        Event           Property
+     -------------------------------
+        click           onClick
+        change          onChange
+        doubleClick     onDoubleClick
+     -------------------------------
+
+8. While creating html forms(which include inputs), first we have to use following tag:
+    <form name="name of form" method="POST/GET/">
+    </form>
+
+9. To access value from any tool, if it is under form, then, follow below given sytax:
+"form.name.toolname.value"
+
+10. To access any tag, use following method (tag must be identified by "Id" property)
+document.getElementById("idname").innerHTML/innerText = value;
+once we access any tag with this statement, 
+to get the value:
+        document.getElementById("idname").value
+to assign value:
+        document.getElementById("idName").inner
+
+11. parseInt(string value): - this method conerts value into integer
+12. parseFloat
