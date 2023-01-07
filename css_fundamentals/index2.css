@@ -1,0 +1,18 @@
+body{
+    background-url('E:\Workspace 2\web_development_sandbox\stalone.jpg');
+}
+span{
+    background-color: yellow;
+}
+#top{
+
+}
+.red{
+    color:red;
+}
+.blue{
+    color:blue;
+}
+.highlight{
+    background-color: #663399;
+}
