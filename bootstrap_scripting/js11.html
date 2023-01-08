@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript">
+        //coding 
+    </script>
+</head>
+<body onload="loadddlItems()">
+    <h1 style="text-align:center;width:100%">JavaScript - Dropdown</h1>
+    <form name="frmDdl">
+        <p style="text-align:center;width:100%">
+            <select  name="ddlDate"  id="ddlDate">
+            </select>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <select  name="ddlMon"  id="ddlMon">
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <select  name="ddlyear"  id="ddlyear">
+            </select>
+            <input type="button"  value="Get Birth Date" onclick="ShowBirthdate()"  />
+            <h2 style="text-align:center;width:100%" id="res">
+
+            </h2>
+        </p>
+    </form>
+    
+    <script type="text/javascript">
+      function loadddlItems()
+      {
+        //<option value="Hyderabad">Hyderabad</option>
+        var dayItems = "<option value='-1'>Day</option>";
+        for(var i=1;i<=31;i++)
+        {
+             //dayItems = dayItems + "<option value='1'>1</option>";
+            dayItems = dayItems + "<option value='" + i + "'>" + i + "</option>";
+        }
+        document.getElementById("ddlDate").innerHTML = dayItems;
+
+        var yearItems = "<option value='-3'>Year</option>";
+
+        for(var i=1980;i<=2023;i++)
+        {
+            yearItems = yearItems + "<option value='" + i + "'>" + i + "</option>";
+        }
+        document.getElementById("ddlyear").innerHTML = yearItems;
+
+        var monthnames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var monthItems = "<option value='-2'>Month</option>";
+
+        for(var i=0;i<monthnames.length;i++)
+        {
+            monthItems = monthItems + "<option value='" + monthnames[i] + "'>" + monthnames[i] + "</option>";
+        }
+
+        document.getElementById("ddlMon").innerHTML = monthItems;
+    }
+      
+    function ShowBirthdate()
+    {
+        var d = frmDdl.ddlDate.value;
+        var m = frmDdl.ddlMon.value;
+        var y = frmDdl.ddlyear.value;
+
+        var bdate = d + " - " + m + " - " + y;
+        document.getElementById("res").innerHTML = "Birth Date is : " + bdate;
+    }
+    </script>
+</body>
+</html>
