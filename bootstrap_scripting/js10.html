@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript">
+        //coding 
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center;width:100%">JavaScript - Dropdown</h1>
+    <form name="frmDdl">
+        <p style="text-align:center;width:100%">
+            City :  <select  name="ddlCity"  onchange="DemoDdl()">
+                <option value="-1">Select City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+            <h2 style="text-align:center;width:100%" id="res">
+
+            </h2>
+        </p>
+    </form>
+    
+   <!-- Murali has Hobbies Gardening, Read Books, Chess -->
+
+    <script type="text/javascript">
+       function  DemoDdl()
+       {
+            var city = frmDdl.ddlCity.value;
+
+            if(city!="-1")
+                document.getElementById("res").innerHTML = "Your City : " + city;
+            else
+                alert("Please select a city");
+       }
+    </script>
+</body>
+</html>
