@@ -98,4 +98,4 @@ to assign value:
 
 11. parseInt(string value): - this method conerts value into integer
 12.  parseFloat(string value) :-  this method converts value into decimal.
-13.  We can access tool values without formname also, here in this case tool should be identified by 			"Id" property.
+13.  We can access tool values without formname also, here in this case tool should be identified by "Id" property.

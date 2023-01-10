@@ -1,0 +1,30 @@
+body {
+
+}
+
+#header {
+    border-color:black;
+    border-width: 2px;
+    border-style: dashed;
+    outline: red solid 5px;
+    height: 200px;
+
+    margin: 10px 30px 20px 50px;
+    padding: 10px 30px 20px 50px;
+}
+
+span {
+
+}
+
+#top {
+
+}
+
+.red {
+    color: #111111;
+}
+
+.blue {
+    color: #123333;
+}
