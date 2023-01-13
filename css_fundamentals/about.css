@@ -7,6 +7,9 @@ body {
 .hideme {
     /*display: none;*/
     /*visibility: hidden;*/
+    position: static;
+    border: 1px solid black;
+    background-color: yellowgreen;
 }
 
 table, td {
