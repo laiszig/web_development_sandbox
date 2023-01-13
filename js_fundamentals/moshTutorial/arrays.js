@@ -1,2 +1,3 @@
 let selectedColors = ['red', 'blue'];
-console.log(selectedColors);
+selectedColors[2] = 1;
+console.log(selectedColors.length);
