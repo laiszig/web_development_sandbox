@@ -18,7 +18,7 @@
         Value - 2 <input type="text"  id="txtVal2" />
         <br /><br />
         <input type="button"  value="Addition" onclick="Addition()" />
-        
+
         &nbsp;&nbsp;&nbsp;
         <input type="button"  value="Reset" onclick="ResetForm()" />
         <h2 style="text-align:center;width:100%" id="res">
@@ -27,9 +27,8 @@
     </p>
 </form> 
     <script type="text/javascript">
-     
-     function Addition()
-     {
+
+        function Addition() {
         var x = parseFloat(document.getElementById("txtVal1").value);
         var y = parseFloat(document.getElementById("txtVal2").value);
 
@@ -40,7 +39,7 @@
 
     function ResetForm()
     {
-       frmSample.txtVal1.value = "";
+        frmSample.txtVal1.value = "";
         frmSample.txtVal2.value = "";
         document.getElementById("res").innerHTML = "";
     }
