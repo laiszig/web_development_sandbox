@@ -39,3 +39,5 @@ interface <iface name> {
         variablename: data type;
         methodname([arg]): return type;
 }
+
+once interface is created, inheritance is achieved with "implements" keyword
