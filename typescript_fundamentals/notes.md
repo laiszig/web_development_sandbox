@@ -6,7 +6,7 @@ While coding automatic suggestions will be provided. ie syntax of statements etc
 
 -----------
 
-Steps to intsall typescript:
+Steps to install typescript:
 - Download and install Node JS
 - With the help of Node JS, install "TypeScript"
 - To write program, use VSCode Software.
@@ -17,4 +17,25 @@ Steps to write typescript:
 3. Go to cmd, then compile the program as follows.
         tsc <filename.ts>
 
-        
+--------------
+
+how to declar variable in typescript?
+var variable : data type = value;
+
+--------------
+
+Constructor: 
+it is a special method of the class which will be executed whenever object created for that class.
+
+constructor ([arguments]) {
+        body of the constructor
+}
+
+Here Multiple inheritance is not possible b/w classes. Because a child class can inherit only one parent class. To achieve multiple inheritance use Interface.
+
+Interface: it is one type of class which has only declarations of variables and method
+
+interface <iface name> {
+        variablename: data type;
+        methodname([arg]): return type;
+}
