@@ -41,3 +41,15 @@ interface <iface name> {
 }
 
 once interface is created, inheritance is achieved with "implements" keyword
+
+
+---------
+
+Modules: 
+- Modules are like packages in Java.
+
+A Module is a file, which can export one or more classes to other files. The other files can import thos files.
+
+whenever module file creating, while defining class "export" keyword has to be preceded.
+those classes which preceeded with "export" can import into other classes.
+

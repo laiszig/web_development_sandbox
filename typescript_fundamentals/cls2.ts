@@ -1,5 +1,5 @@
 class Student {
-    private rno:nnumber=0;
+    private rno:number=0;
     private sname:string= "";
     private course:string="";
     private fees:number=0.0;
