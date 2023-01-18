@@ -5,11 +5,15 @@ var ourFriends = {
     name4: "Last One"
 };
 
-for (a = 1; a < 4; a++) {
+var a = 4;
+var b = 4;
+while (a < 4) {
     console.log(ourFriends['name' + a]);
+    a++;
 }
 
-for (a in ourFriends) {
-    console.log(a);
-    console.log(ourFriends[a]);
+do {
+    console.log(ourFriends['name' + b]);
+    b++;
 }
+while (a < 4); 
