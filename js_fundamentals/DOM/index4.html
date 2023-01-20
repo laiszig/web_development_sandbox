@@ -4,7 +4,7 @@
 <head>
     <title>JavaScript DOM Course</title>
     <style>
-        .yellow {
+        li.yellow {
             background-color: yellow;
         }
     </style>
@@ -21,20 +21,20 @@
             <li>Elements within the page can me accessed and changed</li>
         </ul>
         <p>
-            <input type="text" id="newTxt" onchange="upText">
+            <input type="text" id="newTxt" onchange="upText()">
         </p>
         <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/800px-DOM-model.svg.png" alt=""></p>
         <p>Node: Everything within the HTML is a node.</p>
         <div class="yellow">Hello World</div>
-        <p>One</p>
-        <p>Two</p>
-        <div>Three</div>
-        <div>Four</div>
         <script>
-            
-            var lItems = document.getElementsByTagName('div')[1];
-            console.log(lItems.firstChild.nextSibling.previousSibling.parentElement);
+            var selEle = document.querySelector('div.yellow');
+            selEle.innerHTML = "FOUND IT";
+            var selList = document.querySelector('ul > li');
+            selList.innerHTML = "FOUND the first One";
 
+            var allYellow = document.querySelectorAll('.yellow');
+            console.log(allYellow);
+            allYellow[0].innerHTML = "found new item";
         </script>
     </body>
 </html>

@@ -26,15 +26,28 @@
         <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/800px-DOM-model.svg.png" alt=""></p>
         <p>Node: Everything within the HTML is a node.</p>
         <div class="yellow">Hello World</div>
-        <p>One</p>
-        <p>Two</p>
-        <div>Three</div>
-        <div>Four</div>
         <script>
-            
-            var lItems = document.getElementsByTagName('div')[1];
-            console.log(lItems.firstChild.nextSibling.previousSibling.parentElement);
+            var output = document.getElementById('output');
+            var listItems = document.getElementsByTagName('li');
+            var myImg = document.getElementsByTagName('img');
+            var yellow = document.getElementsByClassName('yellow');
 
+            console.log(yellow);
+
+            for (var x = 0; x < yellow.length; x++) {
+                yellow[x].innerHTML = "This item is YELLOW" + (x + 1);
+            }
+
+            console.log(myImg[0].src);
+            for(var x = 0; x < listItems.length; x++) {
+                listItems[x].innerHTML = "Item " + (x + 1);
+            } 
+            listItems[2].innerText = "UPDATED";
+
+            function upText(){
+                var holder = document.getElementById('newTxt').value;
+                output.innerText = holder;
+            }
         </script>
     </body>
 </html>
