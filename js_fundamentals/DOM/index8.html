@@ -33,18 +33,22 @@
     </div>
 
         <script>
-            var listItems = document.getElementsByTagName("li");
-            console.log(listItems);
+        
+        var output = document.getElementById('output');
+        var newTxt = document.getElementById('newTxt');
+        var yellow = document.querySelector("yellow");
 
-            for(var x = 0; x < listItems.length; x++) {
-                listItems[x].onmouseover = function() {
-                    if(this.style.backgroundColor == "red") {
-                        this.style.backgroundColor = "white"
-                    } else {
-                    this.style.backgroundColor = "red";
-                }
-            }
+        yellow.addEventListener("click", myFun);
+
+        output.onclick = myFun;
+        newTxt.onchange = function() {
+            console.log(newTxt.value);
         }
+
+        function myFun() {
+            console.log("hello");
+        }
+        
         </script>
 
     </body>
