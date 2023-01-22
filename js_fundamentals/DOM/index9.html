@@ -23,24 +23,28 @@
         <p>
             <input type="text" id="newTxt" onchange="upText">
         </p>
-        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/800px-DOM-model.svg.png" width="100px"></p>
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/800px-DOM-model.svg.png" alt=""></p>
         <p>Node: Everything within the HTML is a node.</p>
     <div class="yellow">
-        <p><img src="http://brackets.io/img/hero.png" width="100px"></p>
+        <p>One</p>
         <p>Two</p>
         <div>Three</div>
         <div>Four</div>
     </div>
 
         <script>
-            var imgList = document.getElementsByTagName("img");
-            console.dir(imgList[0]);
+            var listItems = document.getElementsByTagName("li");
+            console.log(listItems);
 
-            for(var x = 0; x < imgList.length; x++) {
-                imgList[x].onclick = function() {
-                    window.open(this.src, 'My image', 'resizable=yes,scrollbars=yes,width=800, height=600');
+            for(var x = 0; x < listItems.length; x++) {
+                listItems[x].onmouseover = function() {
+                    if(this.style.backgroundColor == "red") {
+                        this.style.backgroundColor = "white"
+                    } else {
+                    this.style.backgroundColor = "red";
                 }
             }
+        }
         </script>
 
     </body>
