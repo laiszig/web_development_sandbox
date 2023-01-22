@@ -4,14 +4,14 @@
 <head>
     <title>JavaScript DOM Course</title>
     <style>
-        li.yellow {
+        .yellow {
             background-color: yellow;
         }
     </style>
 </head>
 
     <body>
-        <div id="output">DOsM (Document Object Model)</div>
+        <div id="output">DOM (Document Object Model)</div>
         <h1>What is the DOM?</h1>
         <p>Treats an HTML, XHTML, XML document as a tree structure wherein each node is an object representing a part of the document.</p>
         <ul>
@@ -21,20 +21,21 @@
             <li>Elements within the page can me accessed and changed</li>
         </ul>
         <p>
-            <input type="text" id="newTxt" onchange="upText()">
+            <input type="text" id="newTxt" onchange="upText">
         </p>
         <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/800px-DOM-model.svg.png" alt=""></p>
         <p>Node: Everything within the HTML is a node.</p>
         <div class="yellow">Hello World</div>
-        <script>
-            var selEle = document.querySelector('div.yellow');
-            selEle.innerHTML = "FOUND IT";
-            var selList = document.querySelector('ul > li');
-            selList.innerHTML = "FOUND the first One";
+        <p>One</p>
+        <p>Two</p>
+        <div>Three</div>
+        <div>Four</div>
 
-            var allYellow = document.querySelectorAll('.yellow');
-            console.log(allYellow);
-            allYellow[0].innerHTML = "found new item";
+        <script>
+            var output = document.getElementById('output');
+            output.style.backgroundColor = "red";
+            output.style.border = "3px solid black";
         </script>
+
     </body>
 </html>
