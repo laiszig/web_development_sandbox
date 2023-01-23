@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page Website</title>
     <style>
+        #mast{
+            width:100%;
+            background-color: #ddd;
+            height: 50px;
+            margin-top: 20px;
+            position: fixed;
+        }
         .container{
             max-width:1040px;
             border:1px solid black;
@@ -15,6 +22,11 @@
             border:1px solid #ddd;
             min-height:500px;
         }
+        #nav{
+            float:right;
+            margin-top: 5px;
+            width: 600px;
+        }
         #nav ul{
             list-style: none;
             margin:0 auto;
@@ -22,7 +34,7 @@
         }
         #nav li{
             float:left;
-            padding:0 10px;
+            padding: 10px;
             margin:2px;
             background-color: black;
         }
@@ -40,20 +52,21 @@
     </style>
 </head>
 <body>
-    <header>
-        <div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#section1" class="active">Section 1</a></li>
-                    <li><a href="#section2">Section 2</a></li>
-                    <li><a href="#section3">Section 3</a></li>
-                    <li><a href="#section4">Section 4</a></li>
-                    <li><a href="#section5">Section 5</a></li>
-                    <li><a href="#section6">Section 6</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <header id="mast">
+            <div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#section1" class="active">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section4">Section 4</a></li>
+                        <li><a href="#section5">Section 5</a></li>
+                        <li><a href="#section6">Section 6</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
     <section id="section1" class="section clear">
         <div class="wrap">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
@@ -129,5 +142,6 @@
     <script>
 
     </script>
+    </div>
 </body>
 </html>
