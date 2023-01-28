@@ -1,147 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Page Website</title>
     <style>
-        #mast{
-            width:100%;
-            background-color: #ddd;
-            height: 50px;
-            margin-top: 20px;
-            position: fixed;
-        }
-        .container{
-            max-width:1040px;
-            border:1px solid black;
-            margin:0 auto;
-        }
-        .section{
-            border:1px solid #ddd;
-            min-height:500px;
-        }
-        #nav{
-            float:right;
-            margin-top: 5px;
-            width: 600px;
-        }
-        #nav ul{
-            list-style: none;
-            margin:0 auto;
-            display: block;
-        }
-        #nav li{
-            float:left;
-            padding: 10px;
-            margin:2px;
-            background-color: black;
-        }
-        #nav li a{
-            text-decoration: none;
-            font-size: 1em;
-            color: white;
-        }
-        #nav li a:hover{
-            color: red;
-        }
-        .clear{
-            clear:both;
-        }
+      #mast {
+        width: 100%;
+        background-color: #ddd;
+        height: 50px;
+        margin-top: 20px;
+        position: fixed;
+      }
+      .container {
+        max-width: 1040px;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      .section {
+        border: 1px solid #ddd;
+        min-height: 500px;
+      }
+      #nav {
+        float: right;
+        margin-top: 5px;
+        width: 600px;
+      }
+      #nav ul {
+        list-style: none;
+        margin: 0 auto;
+        display: block;
+      }
+      #nav li {
+        float: left;
+        padding: 10px;
+        margin: 2px;
+        background-color: black;
+      }
+      #nav li a {
+        text-decoration: none;
+        font-size: 1em;
+        color: white;
+      }
+      #nav li a:hover {
+        color: red;
+      }
+      .clear {
+        clear: both;
+      }
+      .wrap {
+        background-color: rgb(200, 200, 200);
+        background-color: rgba(200, 200, 200, 0, 5);
+        border-radius: 20px;
+        padding: cover;
+        margin: 40px auto;
+      }
+      #section1 {
+        background: url("http://lorempixel.com.br/1200/800");
+        background-size: cover;
+        padding: 100px;
+      }
+      #section2 {
+        background-color: blueviolet;
+      }
+      #section3 {
+        background: url("http://lorempixel.com.br/1260/800");
+        background-size: cover;
+      }
+      #section5 {
+        background: url("http://lorempixel.com.br/1300/800");
+        background-size: cover;
+      }
+      #footer{
+        background-color: #333;
+        color: white;
+      }
+      .col-1{
+        width: 66%;
+        display: inline-block;
+      }
+      .col-2{
+        width:33%;
+        display: inline-block;
+      }
     </style>
-</head>
-<body>
-        <header id="mast">
-            <div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#section1" class="active">Section 1</a></li>
-                        <li><a href="#section2">Section 2</a></li>
-                        <li><a href="#section3">Section 3</a></li>
-                        <li><a href="#section4">Section 4</a></li>
-                        <li><a href="#section5">Section 5</a></li>
-                        <li><a href="#section6">Section 6</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="container">
-    <section id="section1" class="section clear">
+  </head>
+  <body>
+    <header id="mast">
+      <div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#section1" class="active">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+            <li><a href="#section5">Section 5</a></li>
+            <li><a href="#section6">Section 6</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section id="section1" class="section clear">
         <div class="wrap">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
-            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
-            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+          <p>
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+            mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+            semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+            ante, dapibus in, viverra quis, feugiat a.
+          </p>
         </div>
-    </section>
-    <section id="section2" class="section">
+      </section>
+      <section id="section2" class="section">
         <div class="wrap">
-            <img src="http://placeimg.com/640/480/any">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <img src="http://lorempixel.com.br/350/150" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
         </div>
-    </section>
-    <section id="section2" class="section">
+      </section>
+      <section id="section3" class="section">
         <div class="wrap">
-            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          <p>
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus.
+          </p>
         </div>
-    </section>
-    <section id="section3" class="section">
+      </section>
+      <section id="section4" class="section">
         <div class="wrap">
-            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-                Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                Aliquam lorem ante, dapibus in, viverra quis, feugiat a.</p>
+          <p>
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+            dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+            ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+          </p>
         </div>
-    </section>
-    <section id="section4" class="section">
+      </section>
+      <section id="section5" class="section">
         <div class="wrap">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            <p>Aenean commodo ligula eget dolor. Aenean massa.</p>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <p>Aenean commodo ligula eget dolor. Aenean massa.</p>
+          <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus.
+          </p>
+          <p>
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+          <p>
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate
+          </p>
         </div>
-    </section>
-    <section id="section5" class="section">
+      </section>
+      <section id="section6" class="section">
         <div class="wrap">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
-                eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+            mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+            semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+            ante, dapibus in, viverra quis, feugiat a.
+          </p>
         </div>
-    </section>
-    <section id="section6" class="section">
-        <div class="wrap">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-                vulputate eget, arcu.</p>
-            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
-                feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-                Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, 
-                tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
-                blandit vel, luctus pulvinar.</p>
-        </div>
-    </section>
-    <footer>
+      </section>
+      <footer id="footer">
         <div>
-
+          <div class="col-1">
+            (c) copyright my website
+            <p>Contact us for more info</p>
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>Network 1</li>
+              <li>More links</li>
+              <li>More links</li>
+              <li>More links</li>
+              <li>More links</li>
+            </ul>
+          </div>
         </div>
-    </footer>
-    <script>
-
-    </script>
+      </footer>
+      <script></script>
     </div>
-</body>
+  </body>
 </html>
