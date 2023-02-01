@@ -108,12 +108,12 @@ body {
 }
 
 .footer {
-    padding: 32px;
-    border-top: 0.4px solid #fff2e7;    
+  padding: 32px;
+  border-top: 0.4px solid #fff2e7;
 }
 
 .footer-image {
-    height: 48px;
-    display: block;
-    margin: 0 auto;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
 }
