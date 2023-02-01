@@ -82,6 +82,10 @@ body {
   font-size: 24px;
 }
 
+.content-main-written-button:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
 .content-secondary {
   display: flex;
   flex-direction: column;
