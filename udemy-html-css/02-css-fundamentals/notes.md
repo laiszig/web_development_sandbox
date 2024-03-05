@@ -19,11 +19,11 @@
   - Create an external file specifically used for styling.
   - Add file property to the html file
 
-### 📝 Topic 2: [Topic Title]
+### 📝 Classes and ID Selectors 2
 
-- **Main Point 1:** 
-  - Detail 1
-  - Detail 2
-- **Main Point 2:** 
-  - Detail 1
-  - Detail 2
+- **Ids:** 
+  - We can use the property id="" inside the html tag to give it a name and use it with # on the css file
+  - Easier to change a specific part of the page
+- **Class** 
+  - The difference between id and class is that we can only use ids once.
+  - Useful to use the same name multiple times
