@@ -67,3 +67,9 @@
     - If there are multiple, the last selector in the code applies
   4. Universal selector (*)
 
+### 📝 Inheritance
+
+- **Inheritance in CSS** 
+  - Inheritance is a mechanism by which some styles/properties get their values inherited from parent elements to child elements
+  - Not all properties can be inherited, mostly just text style ones
+  - Inherited properties are very easily overwritten by higher priority declarations/selectors
