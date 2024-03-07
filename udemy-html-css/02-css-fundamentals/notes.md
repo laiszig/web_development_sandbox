@@ -46,12 +46,24 @@
   - Example: #00ffff #f4b33f #0ff
   - In practice, we mostly use hexadecimal colors, and rgba when we need transparency
 
-- **Shades of grey** 
+- **Shades of Grey** 
   - When colors in all 3 channels are the same, we get a grey color
   - there are 256 pure grays to choose from
   - Example: rgb(69, 69, 69) #444444 #444 / rgb(183, 183, 183) #b7b7b7
 
-- **Styling links** 
-  -LVHA (link, visited, hover, active)
+- **Styling Links** 
+  - LVHA (link, visited, hover, active)
 
+### 📝 Conflicting Declarations
+
+- **Priority of selectors** 
+  ! - Declarations marked !important
+  0. Inline style (Style attribute in HTML)
+  1. ID(#) selector
+    - If there are multiple, the last selector in the code applies
+  2. Class (.) or pseudo-class (:) selector
+    - If there are multiple, the last selector in the code applies
+  3. Element selector (p, div, li, etc.)
+    - If there are multiple, the last selector in the code applies
+  4. Universal selector (*)
 

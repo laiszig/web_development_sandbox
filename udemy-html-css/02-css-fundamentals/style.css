@@ -102,4 +102,29 @@ a:active {
     font-style: italic;
 }
 
+/* Has a lower priority than a:link and the other pseudo-classes of a */
+a {
+    color: red;
+}
+
 /* LVHA (link, visited, hover, active) */
+
+/* Resolving conflicts */
+
+/* #copyright {
+    color: red;
+}
+
+.copyright {
+    color:blue;
+}
+
+.text {
+    color: yellow;
+}
+
+footer p {
+    color: green !important;
+} */
+
+
