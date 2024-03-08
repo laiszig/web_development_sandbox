@@ -73,3 +73,25 @@
   - Inheritance is a mechanism by which some styles/properties get their values inherited from parent elements to child elements
   - Not all properties can be inherited, mostly just text style ones
   - Inherited properties are very easily overwritten by higher priority declarations/selectors
+
+### 📝 The CSS Box Model
+  - The box model defines how an element is going to be displayed on a web page
+
+![](img/css_box_model.png)
+
+- **Parts of an element** 
+  - Content
+    - Text, images, etc.
+    - width and height
+  - Border
+    - A line around the element, still inside of the element
+  - Padding
+    - Invisible space around the content, inside of the element (between the content and the border)
+  - Marging
+    - Space outside of the element, between elements
+  - Fill Area
+    - area that gets filled with background color or background image
+
+- **Element Height and Width Calculation**
+  - Final Element width: left border + left padding + width + right padding + right border
+  - Final Element height: top border + top padding + height + bottom padding + bottom border
