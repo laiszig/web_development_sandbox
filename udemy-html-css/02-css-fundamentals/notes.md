@@ -147,3 +147,14 @@
   - No impact on surrounding elements, might overlap them
   - We use top, bottom, left or right to offset the element from its relatively positioning container
   - position: absolute;
+
+### 📝 Pseudo-elements
+
+- **Siblings**
+
+  - Siblings are elements inside the same parent element
+  - Adjacent sibling, is the very next element after another.
+
+- **After pseudo-elements**
+  - Creates a pseudo-element that will automatically be the very first child the selected element
+  -
