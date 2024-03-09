@@ -95,3 +95,6 @@
 - **Element Height and Width Calculation**
   - Final Element width: left border + left padding + width + right padding + right border
   - Final Element height: top border + top padding + height + bottom padding + bottom border
+
+- **Colapsing Margins**
+  - If we have margins from two elements, that occupy the same space, only the larger one will be shown on screen
