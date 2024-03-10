@@ -157,3 +157,12 @@
 
 - **After pseudo-elements**
   - Creates a pseudo-element that will automatically be the very first child the selected element
+
+### 📝 Useful tools
+
+- **Diff checker**
+
+  - diffchecker.com
+
+- **HTML Validator**
+  - validator.w2.org
