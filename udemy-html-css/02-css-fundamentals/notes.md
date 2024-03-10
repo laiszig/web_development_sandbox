@@ -153,8 +153,7 @@
 - **Siblings**
 
   - Siblings are elements inside the same parent element
-  - Adjacent sibling, is the very next element after another.
+  - Adjacent sibling, is the very next element after another
 
 - **After pseudo-elements**
   - Creates a pseudo-element that will automatically be the very first child the selected element
-  -
